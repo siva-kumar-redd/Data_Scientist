@@ -2900,7 +2900,492 @@ Since text data powers chatbots, search engines, recommendation systems, and lar
 
 </div>
 
+# 🚀 Day 10 — Advanced Strings in Python
 
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-Advanced-blue?style=for-the-badge&logo=python)
+![Day](https://img.shields.io/badge/Day-10-success?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-Advanced%20Strings-orange?style=for-the-badge)
+
+### 🔥 Learning Text Processing for NLP, AI & Machine Learning
+
+</div>
+
+---
+
+# 🎯 Goal of Day 10
+
+Today I learned advanced string operations used in AI, Machine Learning, NLP, and real-world Python applications.
+
+By the end of today, I can:
+
+✅ Use Advanced String Operations  
+✅ Reverse Strings Efficiently  
+✅ Perform Text Cleaning  
+✅ Solve Interview String Problems  
+✅ Build Validation Systems  
+✅ Prepare Text for NLP Applications  
+
+---
+
+# 📚 What I Learned Today
+
+## 🔹 String Indexing
+
+```python
+text = "Python"
+
+print(text[0])
+print(text[-1])
+```
+
+Output:
+
+```text
+P
+n
+```
+
+---
+
+## 🔹 String Slicing
+
+```python
+text = "MachineLearning"
+
+print(text[0:7])
+print(text[7:])
+print(text[:7])
+```
+
+Output:
+
+```text
+Machine
+Learning
+Machine
+```
+
+---
+
+## 🔹 Step Slicing
+
+```python
+text = "Python"
+
+print(text[::2])
+```
+
+Output:
+
+```text
+Pto
+```
+
+---
+
+## 🔹 Reverse a String
+
+```python
+text = "Python"
+
+print(text[::-1])
+```
+
+Output:
+
+```text
+nohtyP
+```
+
+---
+
+# 🛠️ Advanced String Methods
+
+## lower()
+
+```python
+print("HELLO".lower())
+```
+
+Output:
+
+```text
+hello
+```
+
+---
+
+## upper()
+
+```python
+print("python".upper())
+```
+
+Output:
+
+```text
+PYTHON
+```
+
+---
+
+## strip()
+
+```python
+print("  Python  ".strip())
+```
+
+Output:
+
+```text
+Python
+```
+
+---
+
+## replace()
+
+```python
+print("I like Java".replace("Java", "Python"))
+```
+
+Output:
+
+```text
+I like Python
+```
+
+---
+
+## split()
+
+```python
+print("AI,ML,DL".split(","))
+```
+
+Output:
+
+```text
+['AI', 'ML', 'DL']
+```
+
+---
+
+## count()
+
+```python
+print("banana".count("a"))
+```
+
+Output:
+
+```text
+3
+```
+
+---
+
+## find()
+
+```python
+print("Machine".find("i"))
+```
+
+Output:
+
+```text
+4
+```
+
+---
+
+## startswith() & endswith()
+
+```python
+print("siva@gmail.com".startswith("siva"))
+print("resume.pdf".endswith(".pdf"))
+```
+
+Output:
+
+```text
+True
+True
+```
+
+---
+
+# 💻 Interview Problems Solved
+
+## Palindrome Check
+
+```python
+word = "level"
+
+if word == word[::-1]:
+    print("Palindrome")
+```
+
+---
+
+## Character Frequency Counter
+
+```python
+text = "Python"
+
+freq = {}
+
+for ch in text:
+    freq[ch] = freq.get(ch, 0) + 1
+
+print(freq)
+```
+
+Output:
+
+```python
+{'P':1,'y':1,'t':1,'h':1,'o':1,'n':1}
+```
+
+---
+
+## Longest Word Finder
+
+```python
+text = "Artificial Intelligence Engineer"
+
+words = text.split()
+
+print(max(words, key=len))
+```
+
+Output:
+
+```text
+Intelligence
+```
+
+---
+
+## First Non-Repeating Character
+
+```python
+text = "aabbccdeeff"
+
+for ch in text:
+    if text.count(ch) == 1:
+        print(ch)
+        break
+```
+
+Output:
+
+```text
+d
+```
+
+---
+
+## Anagram Check
+
+```python
+a = "earth"
+b = "heart"
+
+if sorted(a) == sorted(b):
+    print("Anagram")
+```
+
+Output:
+
+```text
+Anagram
+```
+
+---
+
+# 🏢 Real-World AI/ML Connection
+
+### Text Cleaning
+
+```python
+reviews = [
+    " GREAT ",
+    "Excellent",
+    " bad "
+]
+
+for review in reviews:
+    print(review.strip().lower())
+```
+
+Output:
+
+```text
+great
+excellent
+bad
+```
+
+Used in:
+
+- 🤖 NLP Pipelines
+- 💬 Chatbots
+- 📊 Sentiment Analysis
+- 📄 Resume Parsing
+- 🧠 LLM Applications
+
+---
+
+# 🚀 Mini Projects
+
+## Email Validator
+
+```python
+email = "siva@gmail.com"
+
+if "@" in email and email.endswith(".com"):
+    print("Valid Email")
+```
+
+---
+
+## Username Generator
+
+```python
+name = "Machine Learning Engineer"
+
+print(name.lower().replace(" ", "_"))
+```
+
+Output:
+
+```text
+machine_learning_engineer
+```
+
+---
+
+## Password Strength Checker
+
+```python
+password = "AI2026ML"
+
+if len(password) >= 8 and any(ch.isdigit() for ch in password):
+    print("Strong Password")
+```
+
+---
+
+## Word Counter
+
+```python
+text = "Artificial Intelligence Engineer"
+
+print(len(text.split()))
+```
+
+Output:
+
+```text
+3
+```
+
+---
+
+# 🧠 Practice Programs Completed
+
+- ✅ String Indexing
+- ✅ String Slicing
+- ✅ Step Slicing
+- ✅ Reverse String
+- ✅ String Methods
+- ✅ Palindrome Checker
+- ✅ Character Frequency Counter
+- ✅ Longest Word Finder
+- ✅ Anagram Checker
+- ✅ Email Validator
+- ✅ Password Strength Checker
+- ✅ Word Counter
+
+---
+
+# 📂 Project Structure
+
+```text
+day10/
+│
+├── indexing.py
+├── slicing.py
+├── reverse.py
+├── string_methods.py
+├── palindrome.py
+├── frequency_counter.py
+├── anagram.py
+├── email_validator.py
+├── password_checker.py
+├── username_generator.py
+├── word_counter.py
+└── README.md
+```
+
+---
+
+# ⚡ Why Advanced Strings Matter
+
+Advanced string operations help developers:
+
+- Process Text Data
+- Build NLP Applications
+- Clean Datasets
+- Validate User Input
+- Create Chatbots
+- Build LLM-based Applications
+
+Text is one of the most important data types in AI.
+
+---
+
+# 📈 Learning Progress
+
+```text
+Python Basics        ████████████████ 100%
+Conditions           ████████████████ 100%
+Loops                ████████████████ 100%
+Functions            ████████████████ 100%
+Lists                ████████████████ 100%
+Dictionaries         ████████████████ 100%
+Tuples               ████████████████ 100%
+Sets                 ████████████████ 100%
+Strings              ████████████████ 100%
+Advanced Strings     ████████████████ 100%
+
+Problem Solving      ███████████████░ 92%
+AI/ML Journey        ████████████░░░░ 70%
+```
+
+---
+
+# 💡 Day 10 Reflection
+
+Today I learned advanced string manipulation techniques and applied them to real-world text-processing problems. I also explored interview-style questions and NLP preprocessing techniques used in AI and Machine Learning systems.
+
+> "Every AI model that understands language starts with clean and well-processed text."
+
+---
+
+
+
+
+<div align="center">
+
+## ⭐ Day 10 Completed Successfully
+
+### 🚀 Building Strong Foundations for NLP & AI Engineering
+
+</div>
 
 
 # 👨‍💻 Author
