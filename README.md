@@ -1,7 +1,7 @@
 # ML_Engineer
 Aspiring ML Engineer with a strong interest in Python, Data Analysis, and Machine Learning.   Passionate about building real-world projects, solving problems, and continuously improving technical skills through hands-on learning and development.
 
-# 🎓 Day 1 — Python Foundations & AI/ML Journey
+# 🎓 Day 1 — Python Foundations & ML Journey
 
 ## 🚀 Goal of Day 1
 
