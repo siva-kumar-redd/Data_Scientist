@@ -3795,6 +3795,343 @@ Understanding file handling is essential because every ML project begins by load
 
 ### 🚀 Learning How Real AI Systems Handle Data
 
+
+
+# 🚀 Day 12 — Exception Handling in Python
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-Advanced-blue?style=for-the-badge\&logo=python)
+![Day](https://img.shields.io/badge/Day-12-success?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-Exception%20Handling-orange?style=for-the-badge)
+
+### 🔥 Building Robust & Error-Free Python Applications
+
+</div>
+
+---
+
+# 🎯 Goal of Day 12
+
+Today I learned how to write robust Python programs that can handle unexpected errors without crashing.
+
+By the end of today, I can:
+
+✅ Handle Runtime Exceptions
+✅ Prevent Program Crashes
+✅ Write Production-Ready Code
+✅ Debug Common Python Errors
+✅ Build Reliable Applications
+
+---
+
+# 📚 What I Learned Today
+
+## 🔹 What is an Exception?
+
+An exception is an error that occurs while a program is running.
+
+```python
+print(10 / 0)
+```
+
+Output:
+
+```text
+ZeroDivisionError
+```
+
+---
+
+## 🔹 try & except
+
+```python
+try:
+    print(10 / 0)
+
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+```
+
+---
+
+## 🔹 ValueError
+
+```python
+try:
+    age = int(input("Enter your age: "))
+
+except ValueError:
+    print("Please enter a valid number.")
+```
+
+---
+
+## 🔹 ZeroDivisionError
+
+```python
+try:
+    result = 100 / 0
+
+except ZeroDivisionError:
+    print("Division by zero is not allowed.")
+```
+
+---
+
+## 🔹 FileNotFoundError
+
+```python
+try:
+    with open("AI.txt", "r") as file:
+        print(file.read())
+
+except FileNotFoundError:
+    print("File not found.")
+```
+
+---
+
+## 🔹 else Block
+
+```python
+try:
+    number = int(input("Enter a number: "))
+
+except ValueError:
+    print("Invalid input")
+
+else:
+    print("Valid input")
+```
+
+---
+
+## 🔹 finally Block
+
+```python
+try:
+    print(10 / 0)
+
+except ZeroDivisionError:
+    print("Cannot divide")
+
+finally:
+    print("Program Finished")
+```
+
+---
+
+## 🔹 Common Python Exceptions
+
+### IndexError
+
+```python
+numbers = [10, 20, 30]
+
+try:
+    print(numbers[5])
+
+except IndexError:
+    print("Index does not exist.")
+```
+
+### KeyError
+
+```python
+student = {
+    "name": "Siva"
+}
+
+try:
+    print(student["marks"])
+
+except KeyError:
+    print("Key not found.")
+```
+
+### TypeError
+
+```python
+try:
+    print(10 + "20")
+
+except TypeError:
+    print("Cannot add integer and string.")
+```
+
+### NameError
+
+```python
+try:
+    print(total_marks)
+
+except NameError:
+    print("Variable is not defined.")
+```
+
+### AttributeError
+
+```python
+try:
+    number = 100
+    number.append(10)
+
+except AttributeError:
+    print("Method not available for this object.")
+```
+
+---
+
+# 💻 Mini Projects
+
+## Safe Marks Calculator
+
+* Accept user input
+* Handle invalid values
+* Prevent division by zero
+* Calculate average safely
+
+---
+
+## Safe Dataset Loader
+
+* Load a dataset from a file
+* Handle missing files
+* Display success or error messages
+* Always complete cleanup using `finally`
+
+---
+
+# 🏢 Real-World AI/ML Connection
+
+Exception handling is used in:
+
+* 🤖 Machine Learning Pipelines
+* 📊 Data Preprocessing
+* 📁 Dataset Loading
+* 🌐 APIs
+* 🤖 Automation Scripts
+* ☁️ Cloud Applications
+
+Reliable software handles errors gracefully instead of crashing unexpectedly.
+
+---
+
+# 🧠 Practice Programs Completed
+
+* ✅ try & except
+* ✅ ValueError Handling
+* ✅ ZeroDivisionError Handling
+* ✅ FileNotFoundError Handling
+* ✅ IndexError Handling
+* ✅ KeyError Handling
+* ✅ TypeError Handling
+* ✅ NameError Handling
+* ✅ AttributeError Handling
+* ✅ else Block
+* ✅ finally Block
+* ✅ Safe Marks Calculator
+* ✅ Safe Dataset Loader
+
+---
+
+# 📂 Project Structure
+
+```text
+day12/
+│
+├── try_except.py
+├── value_error.py
+├── zero_division.py
+├── file_not_found.py
+├── index_error.py
+├── key_error.py
+├── type_error.py
+├── name_error.py
+├── attribute_error.py
+├── safe_marks_calculator.py
+├── safe_dataset_loader.py
+└── README.md
+```
+
+---
+
+# ⚡ Why Exception Handling Matters
+
+Exception handling helps developers:
+
+* Prevent application crashes
+* Handle unexpected user input
+* Build reliable software
+* Improve debugging
+* Develop production-ready applications
+* Create fault-tolerant systems
+
+Every professional Python developer relies on exception handling.
+
+---
+
+# 📈 Learning Progress
+
+```text
+Python Basics        ████████████████ 100%
+Conditions           ████████████████ 100%
+Loops                ████████████████ 100%
+Functions            ████████████████ 100%
+Lists                ████████████████ 100%
+Dictionaries         ████████████████ 100%
+Tuples               ████████████████ 100%
+Sets                 ████████████████ 100%
+Strings              ████████████████ 100%
+Advanced Strings     ████████████████ 100%
+File Handling        ████████████████ 100%
+Exception Handling   ████████████████ 100%
+
+Problem Solving      ████████████████ 100%
+AI/ML Journey        ██████████████░░ 80%
+```
+
+---
+
+# 💡 Day 12 Reflection
+
+Today I learned how to write reliable Python programs using exception handling. Instead of allowing programs to fail unexpectedly, I can now catch and handle common runtime errors effectively.
+
+Exception handling is an essential skill for building production-quality applications in Data Science, Machine Learning, APIs, and automation.
+
+> "Reliable software is not software that never fails—it's software that handles failures gracefully."
+
+---
+
+# 🎯 Next Goals
+
+* Object-Oriented Programming (OOP)
+* Modules & Packages
+* NumPy
+* Pandas
+* Data Analysis Projects
+
+---
+
+# 👨‍💻 Author
+
+**Siva**
+
+🎓 MCA Student
+📊 Aspiring AI/ML Engineer
+🚀 Building projects daily
+
+---
+
+<div align="center">
+
+## ⭐ Day 12 Completed Successfully
+
+### 🚀 Building Reliable Python Applications with Exception Handling
+
+</div>
+
 # 👨‍💻 Author
 
 **Siva Kumar Reddy**

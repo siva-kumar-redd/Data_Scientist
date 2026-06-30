@@ -1,4 +1,6 @@
 try:
     print(10/0)
-except:
+except ZeroDivisionError:
     print("cannot divide by zero")
+finally:
+    print("done")
