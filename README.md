@@ -4034,28 +4034,6 @@ Reliable software handles errors gracefully instead of crashing unexpectedly.
 * ✅ Safe Marks Calculator
 * ✅ Safe Dataset Loader
 
----
-
-# 📂 Project Structure
-
-```text
-day12/
-│
-├── try_except.py
-├── value_error.py
-├── zero_division.py
-├── file_not_found.py
-├── index_error.py
-├── key_error.py
-├── type_error.py
-├── name_error.py
-├── attribute_error.py
-├── safe_marks_calculator.py
-├── safe_dataset_loader.py
-└── README.md
-```
-
----
 
 # ⚡ Why Exception Handling Matters
 
@@ -4070,29 +4048,7 @@ Exception handling helps developers:
 
 Every professional Python developer relies on exception handling.
 
----
 
-# 📈 Learning Progress
-
-```text
-Python Basics        ████████████████ 100%
-Conditions           ████████████████ 100%
-Loops                ████████████████ 100%
-Functions            ████████████████ 100%
-Lists                ████████████████ 100%
-Dictionaries         ████████████████ 100%
-Tuples               ████████████████ 100%
-Sets                 ████████████████ 100%
-Strings              ████████████████ 100%
-Advanced Strings     ████████████████ 100%
-File Handling        ████████████████ 100%
-Exception Handling   ████████████████ 100%
-
-Problem Solving      ████████████████ 100%
-AI/ML Journey        ██████████████░░ 80%
-```
-
----
 
 # 💡 Day 12 Reflection
 
@@ -4102,27 +4058,8 @@ Exception handling is an essential skill for building production-quality applica
 
 > "Reliable software is not software that never fails—it's software that handles failures gracefully."
 
----
 
-# 🎯 Next Goals
 
-* Object-Oriented Programming (OOP)
-* Modules & Packages
-* NumPy
-* Pandas
-* Data Analysis Projects
-
----
-
-# 👨‍💻 Author
-
-**Siva**
-
-🎓 MCA Student
-📊 Aspiring AI/ML Engineer
-🚀 Building projects daily
-
----
 
 <div align="center">
 
