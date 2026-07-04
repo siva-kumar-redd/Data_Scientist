@@ -4069,6 +4069,292 @@ Exception handling is an essential skill for building production-quality applica
 
 </div>
 
+# 🚀 Day 13 — Object-Oriented Programming (OOP) in Python
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-Advanced-blue?style=for-the-badge\&logo=python)
+![Day](https://img.shields.io/badge/Day-13-success?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-Object--Oriented%20Programming-orange?style=for-the-badge)
+
+### 🔥 Building Scalable Python Applications with OOP
+
+</div>
+
+---
+
+# 🎯 Goal of Day 13
+
+Today I learned how to organize Python code using Object-Oriented Programming (OOP).
+
+By the end of today, I can:
+
+✅ Create Classes and Objects
+✅ Use Constructors (`__init__`)
+✅ Understand `self`
+✅ Work with Instance & Class Variables
+✅ Write Reusable Methods
+✅ Build Real-World OOP Applications
+
+---
+
+# 📚 What I Learned Today
+
+## 🔹 Classes & Objects
+
+A class is a blueprint for creating objects.
+
+```python
+class Student:
+    pass
+
+student1 = Student()
+```
+
+---
+
+## 🔹 Constructors (`__init__`)
+
+Initialize object data automatically.
+
+```python
+class Student:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+```
+
+---
+
+## 🔹 Understanding `self`
+
+`self` refers to the current object.
+
+```python
+class Student:
+
+    def display(self):
+        print(self.name)
+```
+
+---
+
+## 🔹 Instance Variables
+
+Each object stores its own data.
+
+```python
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+```
+
+---
+
+## 🔹 Class Variables
+
+Shared among all objects.
+
+```python
+class Student:
+
+    college = "ABC University"
+```
+
+---
+
+## 🔹 Instance Methods
+
+Methods define an object's behavior.
+
+```python
+class Student:
+
+    def greet(self):
+        print("Welcome", self.name)
+```
+
+---
+
+## 🔹 `__str__()` Method
+
+Provides a readable string representation of an object.
+
+```python
+class Student:
+
+    def __str__(self):
+        return self.name
+```
+
+---
+
+# 💻 Coding Practice
+
+Implemented multiple OOP programs:
+
+* ✅ Student Management System
+* ✅ Employee Management System
+* ✅ Bank Account System
+* ✅ Library Management System
+* ✅ Online Course Management System
+
+---
+
+# 🏗️ Mini Projects
+
+## 📖 Library Management System
+
+Features:
+
+* Store book details
+* Borrow books
+* Return books
+* Validate availability
+
+---
+
+## 🎓 Online Course Management System
+
+Features:
+
+* Add course details
+* Enroll students
+* Update available seats
+* Manage course information
+
+---
+
+# 🏢 Real-World AI/ML Connection
+
+Object-Oriented Programming is used in:
+
+* 🤖 Machine Learning Libraries
+* 📊 Data Processing Pipelines
+* 🌐 Web Applications
+* 🏦 Banking Systems
+* 🏥 Hospital Management
+* 🛒 E-commerce Platforms
+
+Libraries such as **TensorFlow**, **PyTorch**, and **Scikit-learn** are heavily built using OOP concepts.
+
+---
+
+# 🧠 Practice Programs Completed
+
+* ✅ Classes
+* ✅ Objects
+* ✅ Constructors
+* ✅ self Keyword
+* ✅ Instance Variables
+* ✅ Class Variables
+* ✅ Instance Methods
+* ✅ `__str__()` Method
+* ✅ Library Management System
+* ✅ Employee Management System
+* ✅ Bank Account System
+* ✅ Online Course Management System
+
+---
+
+# 📂 Project Structure
+
+```text
+day13/
+│
+├── student.py
+├── employee.py
+├── bank_account.py
+├── library_management.py
+├── online_course.py
+├── class_variables.py
+├── instance_methods.py
+├── constructor_demo.py
+├── str_method.py
+└── README.md
+```
+
+---
+
+# ⚡ Why OOP Matters
+
+Object-Oriented Programming helps developers:
+
+* Organize code efficiently
+* Build reusable components
+* Reduce code duplication
+* Improve maintainability
+* Develop scalable applications
+* Build production-ready software
+
+OOP is one of the core programming paradigms used in professional software development.
+
+---
+
+# 📈 Learning Progress
+
+```text
+Python Basics        ████████████████ 100%
+Conditions           ████████████████ 100%
+Loops                ████████████████ 100%
+Functions            ████████████████ 100%
+Lists                ████████████████ 100%
+Dictionaries         ████████████████ 100%
+Tuples               ████████████████ 100%
+Sets                 ████████████████ 100%
+Strings              ████████████████ 100%
+Advanced Strings     ████████████████ 100%
+File Handling        ████████████████ 100%
+Exception Handling   ████████████████ 100%
+OOP                  ████████████████ 100%
+
+Problem Solving      ████████████████ 100%
+AI/ML Journey        ███████████████░ 85%
+```
+
+---
+
+# 💡 Day 13 Reflection
+
+Today I learned how Object-Oriented Programming helps organize code into reusable and maintainable components. I built multiple OOP-based applications and understood how classes and objects model real-world systems.
+
+OOP is an essential foundation before learning advanced Python libraries used in Data Science, Machine Learning, and Artificial Intelligence.
+
+> "Well-designed classes today become scalable AI applications tomorrow."
+
+---
+
+# 🎯 Next Goals
+
+* Modules & Packages
+* NumPy
+* Pandas
+* Data Analysis Projects
+* Machine Learning Foundations
+
+---
+
+# 👨‍💻 Author
+
+**Siva**
+
+🎓 MCA Student
+📊 Aspiring AI/ML Engineer
+🚀 Building projects daily
+
+---
+
+<div align="center">
+
+## ⭐ Day 13 Completed Successfully
+
+### 🚀 Building the Foundation for Scalable AI & ML Applications
+
+</div>
+
+
 # 👨‍💻 Author
 
 **Siva Kumar Reddy**
