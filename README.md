@@ -4259,24 +4259,7 @@ Libraries such as **TensorFlow**, **PyTorch**, and **Scikit-learn** are heavily 
 
 ---
 
-# 📂 Project Structure
 
-```text
-day13/
-│
-├── student.py
-├── employee.py
-├── bank_account.py
-├── library_management.py
-├── online_course.py
-├── class_variables.py
-├── instance_methods.py
-├── constructor_demo.py
-├── str_method.py
-└── README.md
-```
-
----
 
 # ⚡ Why OOP Matters
 
@@ -4293,28 +4276,6 @@ OOP is one of the core programming paradigms used in professional software devel
 
 ---
 
-# 📈 Learning Progress
-
-```text
-Python Basics        ████████████████ 100%
-Conditions           ████████████████ 100%
-Loops                ████████████████ 100%
-Functions            ████████████████ 100%
-Lists                ████████████████ 100%
-Dictionaries         ████████████████ 100%
-Tuples               ████████████████ 100%
-Sets                 ████████████████ 100%
-Strings              ████████████████ 100%
-Advanced Strings     ████████████████ 100%
-File Handling        ████████████████ 100%
-Exception Handling   ████████████████ 100%
-OOP                  ████████████████ 100%
-
-Problem Solving      ████████████████ 100%
-AI/ML Journey        ███████████████░ 85%
-```
-
----
 
 # 💡 Day 13 Reflection
 
@@ -4324,27 +4285,7 @@ OOP is an essential foundation before learning advanced Python libraries used in
 
 > "Well-designed classes today become scalable AI applications tomorrow."
 
----
 
-# 🎯 Next Goals
-
-* Modules & Packages
-* NumPy
-* Pandas
-* Data Analysis Projects
-* Machine Learning Foundations
-
----
-
-# 👨‍💻 Author
-
-**Siva**
-
-🎓 MCA Student
-📊 Aspiring AI/ML Engineer
-🚀 Building projects daily
-
----
 
 <div align="center">
 
