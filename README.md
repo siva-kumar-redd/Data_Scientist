@@ -1083,19 +1083,7 @@ Lists are among the most frequently used data structures in Python.
 
 ---
 
-# 📈 Learning Progress
 
-```text
-Python Basics        ████████████████ 100%
-Decision Making      ████████████████ 100%
-Loops                ████████████████ 100%
-Functions            ████████████████ 100%
-Lists                █████████████░░░ 80%
-Problem Solving      █████████████░░░ 75%
-AI/ML Journey        ███████░░░░░░░░░ 35%
-```
-
----
 
 # 💡 Day 5 Reflection
 
@@ -1454,20 +1442,7 @@ Dictionaries help developers:
 
 They are one of the most powerful data structures in Python.
 
----
 
-# 📈 Learning Progress
-
-```text
-Python Basics        ████████████████ 100%
-Decision Making      ████████████████ 100%
-Loops                ████████████████ 100%
-Functions            ████████████████ 100%
-Lists                ████████████████ 100%
-Dictionaries         █████████████░░░ 85%
-Problem Solving      ██████████████░░ 80%
-AI/ML Journey        ████████░░░░░░░░ 40%
-```
 
 ---
 
@@ -1894,21 +1869,7 @@ Range is frequently used in Statistics, Data Analysis, and Machine Learning.
 
 ---
 
-# 📈 Learning Progress
 
-```text
-Python Basics        ████████████████ 100%
-Decision Making      ████████████████ 100%
-Loops                ████████████████ 100%
-Functions            ████████████████ 100%
-Lists                ████████████████ 100%
-Dictionaries         ████████████████ 100%
-Tuples               █████████████░░░ 85%
-Problem Solving      ███████████████░ 85%
-AI/ML Journey        █████████░░░░░░░ 50%
-```
-
----
 
 # 💡 Day 7 Reflection
 
@@ -2316,22 +2277,7 @@ Sets are essential in Data Science and Machine Learning preprocessing.
 
 ---
 
-# 📈 Learning Progress
 
-```text
-Python Basics        ████████████████ 100%
-Decision Making      ████████████████ 100%
-Loops                ████████████████ 100%
-Functions            ████████████████ 100%
-Lists                ████████████████ 100%
-Dictionaries         ████████████████ 100%
-Tuples               ████████████████ 100%
-Sets                 ██████████████░░ 90%
-Problem Solving      ███████████████░ 88%
-AI/ML Journey        ██████████░░░░░░ 60%
-```
-
----
 
 # 💡 Day 8 Reflection
 
@@ -2860,23 +2806,6 @@ Strings are the foundation of Natural Language Processing (NLP).
 
 ---
 
-# 📈 Learning Progress
-
-```text
-Python Basics        ████████████████ 100%
-Decision Making      ████████████████ 100%
-Loops                ████████████████ 100%
-Functions            ████████████████ 100%
-Lists                ████████████████ 100%
-Dictionaries         ████████████████ 100%
-Tuples               ████████████████ 100%
-Sets                 ████████████████ 100%
-Strings              ██████████████░░ 90%
-Problem Solving      ███████████████░ 90%
-AI/ML Journey        ███████████░░░░░ 65%
-```
-
----
 
 # 💡 Day 9 Reflection
 
@@ -3348,23 +3277,6 @@ Text is one of the most important data types in AI.
 
 ---
 
-# 📈 Learning Progress
-
-```text
-Python Basics        ████████████████ 100%
-Conditions           ████████████████ 100%
-Loops                ████████████████ 100%
-Functions            ████████████████ 100%
-Lists                ████████████████ 100%
-Dictionaries         ████████████████ 100%
-Tuples               ████████████████ 100%
-Sets                 ████████████████ 100%
-Strings              ████████████████ 100%
-Advanced Strings     ████████████████ 100%
-
-Problem Solving      ███████████████░ 92%
-AI/ML Journey        ████████████░░░░ 70%
-```
 
 ---
 
@@ -3759,25 +3671,7 @@ Machine learning models cannot train until data is loaded from files.
 
 ---
 
-# 📈 Learning Progress
 
-```text
-Python Basics        ████████████████ 100%
-Conditions           ████████████████ 100%
-Loops                ████████████████ 100%
-Functions            ████████████████ 100%
-Lists                ████████████████ 100%
-Dictionaries         ████████████████ 100%
-Tuples               ████████████████ 100%
-Sets                 ████████████████ 100%
-Strings              ████████████████ 100%
-Advanced Strings     ████████████████ 100%
-File Handling        ████████████████ 100%
-
-AI/ML Journey        █████████████░░░ 75%
-```
-
----
 
 # 💡 Day 11 Reflection
 
