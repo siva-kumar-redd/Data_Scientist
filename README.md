@@ -1,11 +1,11 @@
-# ML_Engineer
-Aspiring ML Engineer with a strong interest in Python, Data Analysis, and Machine Learning.   Passionate about building real-world projects, solving problems, and continuously improving technical skills through hands-on learning and development.
+# Data Scientist
+Aspiring Data Scientist with a strong interest in Python, Data Analysis, and Machine Learning.   Passionate about building real-world projects, solving problems, and continuously improving technical skills through hands-on learning and development.
 
 # 🎓 Day 1 — Python Foundations & ML Journey
 
 ## 🚀 Goal of Day 1
 
-Today I started my journey toward becoming an AI/ML Engineer.
+Today I started my journey toward becoming an Data Scientist.
 
 ### Objectives
 - ✅ Set up development environment
@@ -105,7 +105,7 @@ These concepts are the foundation of:
 - 🔄 Data Pipelines
 - 🧠 Artificial Intelligence Applications
 
-Every AI/ML engineer starts by mastering Python fundamentals.
+Every AI/Data Scientist starts by mastering Python fundamentals.
 
 ---
 
@@ -113,7 +113,7 @@ Every AI/ML engineer starts by mastering Python fundamentals.
 
 # 💡 Day 1 Reflection
 
-Today I learned the fundamental building blocks of Python and completed my first coding exercises. This is the first step toward becoming an AI/ML Engineer.
+Today I learned the fundamental building blocks of Python and completed my first coding exercises. This is the first step toward becoming an AI/Data Scientist.
 
 > "Small daily improvements lead to remarkable long-term results."
 
@@ -664,7 +664,7 @@ demo()
 
 ```python
 def welcome():
-    print("Welcome to AI/ML Engineering")
+    print("Welcome to AI/Data Scientisting")
 
 welcome()
 ```
@@ -2303,7 +2303,7 @@ Data cleaning is one of the most important steps in AI/ML workflows, and Sets pr
 
 ## ⭐ Day 8 Completed Successfully
 
-### 🚀 Building Strong Foundations for AI/ML Engineering
+### 🚀 Building Strong Foundations for AI/Data Scientisting
 
 </div>
 
@@ -2811,7 +2811,7 @@ Strings are the foundation of Natural Language Processing (NLP).
 
 Today I learned how to process and manipulate text using Python Strings. I explored indexing, slicing, string methods, text cleaning, and real-world NLP concepts.
 
-Since text data powers chatbots, search engines, recommendation systems, and large language models, mastering strings is an essential step toward becoming an AI/ML Engineer.
+Since text data powers chatbots, search engines, recommendation systems, and large language models, mastering strings is an essential step toward becoming an AI/Data Scientist.
 
 > "In AI, data is the fuel. In NLP, text is the fuel."
 
@@ -3298,9 +3298,9 @@ Today I learned advanced string manipulation techniques and applied them to real
 ### 🚀 Building Strong Foundations for NLP & AI Engineering
 
 </div>
-# 🚀 Day 11: File Handling for ML Engineers
+# 🚀 Day 11: File Handling for Data Scientists
 
-## 📅 Day 11 of AI/ML Engineer Roadmap
+## 📅 Day 11 of AI/Data Scientist Roadmap
 
 ## 🎯 Objective
 
@@ -4195,7 +4195,7 @@ OOP is an essential foundation before learning advanced Python libraries used in
 **Siva Kumar Reddy**
 
 
-📊 Aspiring AI/ML Engineer  
+📊 Aspiring AI/Data Scientist  
 🚀 Building projects daily
 
 ---
