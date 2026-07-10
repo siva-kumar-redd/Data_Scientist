@@ -4351,13 +4351,201 @@ These OOP concepts are widely used in:
 
 Today I understood that good OOP design is not just about creating classes. It is about deciding where data should be stored and which methods should perform different tasks. Using the right type of variable and method makes code cleaner, easier to maintain, and more reusable.
 
+# 🚀 Day 15 – Inheritance in Python
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-Advanced-blue?style=for-the-badge\&logo=python)
+![Day](https://img.shields.io/badge/Day-15-success?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-Inheritance-orange?style=for-the-badge)
+
+### 🔥 Reusing Code with Object-Oriented Programming
+
+</div>
+
+---
+
+# 🎯 Goal of Day 15
+
+Today I learned one of the most important concepts in Object-Oriented Programming: **Inheritance**.
+
+Inheritance allows one class to reuse the properties and methods of another class, reducing duplicate code and making programs easier to maintain.
+
+By the end of today, I can:
+
+* ✅ Create Parent and Child classes
+* ✅ Reuse code using Inheritance
+* ✅ Use the `super()` function correctly
+* ✅ Extend a Parent class with new attributes and methods
+* ✅ Solve inheritance-based coding problems
+* ✅ Understand how inheritance is used in real-world software
+
+---
+
+# 📚 Topics Covered
+
+## 🔹 What is Inheritance?
+
+Inheritance allows a child class to reuse the attributes and methods of a parent class.
+
+### Example
+
+```python
+class Person:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+class Student(Person):
+    pass
+```
+
+---
+
+## 🔹 Parent Class
+
+A parent class contains common properties and behaviors that can be shared with other classes.
+
+Example:
+
+* Person
+* Vehicle
+* Animal
+* Product
+
+---
+
+## 🔹 Child Class
+
+A child class inherits from the parent class and can also have its own attributes and methods.
+
+Example:
+
+* Student
+* Teacher
+* Car
+* Dog
+
+---
+
+## 🔹 Using `super()`
+
+The `super()` function calls the parent class constructor or methods, allowing the child class to reuse existing code.
+
+### Example
+
+```python
+class Student(Person):
+
+    def __init__(self, name, age, roll_number):
+        super().__init__(name, age)
+        self.roll_number = roll_number
+```
+
+---
+
+## 🔹 Adding New Features
+
+A child class can inherit everything from the parent class while adding its own data and functionality.
+
+Example:
+
+* Person → Name, Age
+* Student → Roll Number
+* Teacher → Subject
+
+---
+
+# 💻 Practice Programs Completed
+
+* ✅ Person → Student
+* ✅ Person → Teacher
+* ✅ Vehicle → Car
+* ✅ Animal → Dog
+* ✅ Animal → Cat
+* ✅ BankAccount → SavingsAccount
+* ✅ Product → Electronics
+* ✅ Product → Clothing
+* ✅ Hospital Management System
+* ✅ Employee Management System
+
+---
+
+# 🏢 Company-Style Coding Practice
+
+Solved inheritance-based interview questions similar to those asked in:
+
+* TCS Digital
+* Infosys
+* Cognizant
+* Accenture
+
+Practiced:
+
+* Parent and Child class design
+* Using `super()`
+* Constructor chaining
+* Debugging inheritance errors
+* Interview-style MCQs
+
+---
+
+# 🌍 Real-World Applications
+
+Inheritance is commonly used in:
+
+* 🏥 Hospital Management Systems
+* 🎓 College Management Systems
+* 🏦 Banking Applications
+* 🛒 E-commerce Systems
+* 🚗 Vehicle Management Systems
+* 👨‍💼 Employee Management Systems
+
+---
+
+# 🧠 Key Takeaways
+
+* Create a parent class for common data.
+* Use child classes for additional features.
+* Use `super()` to reuse the parent constructor.
+* Avoid writing duplicate code.
+* Design classes by separating common and unique information.
+
+---
+
+# 📈 Skills Gained
+
+After completing Day 15, I can:
+
+* Design parent and child classes.
+* Identify common and unique attributes.
+* Decide when inheritance should be used.
+* Use `super()` correctly.
+* Solve basic inheritance interview questions.
+* Build small applications using inheritance.
+
 ---
 
 # 🎯 Next Step
 
-In **Day 15**, I'll learn **Inheritance**, where I'll understand how one class can reuse the properties and methods of another class, reducing duplicate code and making programs more efficient.
+In **Day 16**, I will learn **Types of Inheritance**, including:
+
+* Single Inheritance
+* Multiple Inheritance
+* Multilevel Inheritance
+* Hierarchical Inheritance
+* Hybrid Inheritance
+
+I will also solve company-style coding questions and assessment problems based on these concepts.
 
 ---
+
+## 📌 Day 15 Status
+
+**Completed Successfully ✅**
+
 
 
 
