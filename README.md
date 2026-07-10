@@ -105,7 +105,7 @@ These concepts are the foundation of:
 - 🔄 Data Pipelines
 - 🧠 Artificial Intelligence Applications
 
-Every AI/Data Scientist starts by mastering Python fundamentals.
+Every Data Scientist starts by mastering Python fundamentals.
 
 ---
 
@@ -113,7 +113,7 @@ Every AI/Data Scientist starts by mastering Python fundamentals.
 
 # 💡 Day 1 Reflection
 
-Today I learned the fundamental building blocks of Python and completed my first coding exercises. This is the first step toward becoming an AI/Data Scientist.
+Today I learned the fundamental building blocks of Python and completed my first coding exercises. This is the first step toward becoming an Data Scientist.
 
 > "Small daily improvements lead to remarkable long-term results."
 
@@ -4188,6 +4188,178 @@ OOP is an essential foundation before learning advanced Python libraries used in
 ### 🚀 Building the Foundation for Scalable AI & ML Applications
 
 </div>
+
+# 🚀 Day 14 – Advanced Object-Oriented Programming (OOP) in Python
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-Advanced-blue?style=for-the-badge\&logo=python)
+![Day](https://img.shields.io/badge/Day-14-success?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-Advanced%20OOP-orange?style=for-the-badge)
+
+### 🔥 Writing Cleaner, Reusable, and Better Python Programs
+
+</div>
+
+---
+
+# 🎯 Goal of Day 14
+
+Today I learned how to organize data and methods more effectively using Advanced Object-Oriented Programming concepts.
+
+By the end of today, I can:
+
+* ✅ Differentiate between Instance Variables and Class Variables
+* ✅ Decide when to use Instance Methods, Class Methods, and Static Methods
+* ✅ Avoid duplicate data using Class Variables
+* ✅ Write cleaner and more maintainable Python code
+* ✅ Apply OOP concepts to real-world applications
+
+---
+
+# 📚 Topics Covered
+
+## 🔹 Class Variables
+
+A class variable is shared by all objects of a class. It is useful when every object has the same information.
+
+### Example
+
+```python
+class Student:
+
+    school_name = "ABC Public School"
+
+    def __init__(self, name):
+        self.name = name
+```
+
+---
+
+## 🔹 Instance Variables vs Class Variables
+
+### Instance Variables
+
+* Belong to individual objects
+* Each object has its own copy
+
+Examples:
+
+* Name
+* Roll Number
+* Marks
+
+### Class Variables
+
+* Shared by all objects
+* Stored only once inside the class
+
+Examples:
+
+* School Name
+* Company Name
+* Country
+
+---
+
+## 🔹 Instance Methods
+
+Instance methods work with the data of a particular object using `self`.
+
+### Example
+
+```python
+class BankAccount:
+
+    def __init__(self, balance):
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+```
+
+---
+
+## 🔹 Class Methods
+
+Class methods work with class-level data using `cls`.
+
+### Example
+
+```python
+class Student:
+
+    school_name = "ABC Public School"
+
+    @classmethod
+    def change_school_name(cls, new_name):
+        cls.school_name = new_name
+```
+
+---
+
+## 🔹 Static Methods
+
+Static methods perform helper tasks that don't require object data or class data.
+
+### Example
+
+```python
+class Citizen:
+
+    @staticmethod
+    def is_eligible(age):
+        return age >= 18
+```
+
+---
+
+# 💻 Practice Programs Completed
+
+* ✅ Student Management System (Class Variable)
+* ✅ Employee Management System (Class Method)
+* ✅ Library Management System (Instance Method)
+* ✅ School Name Updater (Class Method)
+* ✅ Voting Eligibility Checker (Static Method)
+
+---
+
+# 🌍 Real-World Applications
+
+These OOP concepts are widely used in:
+
+* 🏫 Student Management Systems
+* 🏢 Employee Management Systems
+* 🏦 Banking Applications
+* 📚 Library Management Systems
+* 🛒 E-commerce Applications
+* 📱 Desktop and Web Applications
+
+---
+
+# 💡 Key Takeaways
+
+* Store shared information using **Class Variables**.
+* Store object-specific information using **Instance Variables**.
+* Use **Instance Methods** to work with object data.
+* Use **Class Methods** to work with shared class data.
+* Use **Static Methods** for utility or validation functions.
+
+---
+
+# 🧠 What I Learned
+
+Today I understood that good OOP design is not just about creating classes. It is about deciding where data should be stored and which methods should perform different tasks. Using the right type of variable and method makes code cleaner, easier to maintain, and more reusable.
+
+---
+
+# 🎯 Next Step
+
+In **Day 15**, I'll learn **Inheritance**, where I'll understand how one class can reuse the properties and methods of another class, reducing duplicate code and making programs more efficient.
+
+---
+
+
 
 
 # 👨‍💻 Author
