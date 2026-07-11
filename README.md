@@ -4515,32 +4515,8 @@ Inheritance is commonly used in:
 
 ---
 
-# 📈 Skills Gained
 
-After completing Day 15, I can:
 
-* Design parent and child classes.
-* Identify common and unique attributes.
-* Decide when inheritance should be used.
-* Use `super()` correctly.
-* Solve basic inheritance interview questions.
-* Build small applications using inheritance.
-
----
-
-# 🎯 Next Step
-
-In **Day 16**, I will learn **Types of Inheritance**, including:
-
-* Single Inheritance
-* Multiple Inheritance
-* Multilevel Inheritance
-* Hierarchical Inheritance
-* Hybrid Inheritance
-
-I will also solve company-style coding questions and assessment problems based on these concepts.
-
----
 
 ## 📌 Day 15 Status
 
