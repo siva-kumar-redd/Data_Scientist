@@ -4518,7 +4518,267 @@ Inheritance is commonly used in:
 
 
 
-## 📌 Day 15 Status
+# 🚀 Day 16 – Types of Inheritance, Method Overriding, `super()` & MRO
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-Advanced-blue?style=for-the-badge\&logo=python)
+![Day](https://img.shields.io/badge/Day-16-success?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-Advanced%20OOP-orange?style=for-the-badge)
+
+### 🔥 Building Flexible and Reusable Object-Oriented Programs
+
+</div>
+
+---
+
+# 🎯 Goal of Day 16
+
+Today I explored advanced Object-Oriented Programming concepts by learning different types of inheritance, method overriding, the `super()` function, and Method Resolution Order (MRO).
+
+By the end of today, I can:
+
+* ✅ Identify different inheritance types
+* ✅ Choose the correct inheritance structure for a problem
+* ✅ Override parent methods in child classes
+* ✅ Use `super()` in constructors and normal methods
+* ✅ Understand how Python resolves methods using MRO
+* ✅ Solve inheritance-based company coding questions
+
+---
+
+# 📚 Topics Covered
+
+## 🔹 Types of Inheritance
+
+Python supports multiple ways of sharing code between classes.
+
+### Single Inheritance
+
+One child class inherits from one parent class.
+
+```python
+class Animal:
+    pass
+
+class Dog(Animal):
+    pass
+```
+
+---
+
+### Multilevel Inheritance
+
+A child class becomes the parent of another class.
+
+```python
+class Animal:
+    pass
+
+class Mammal(Animal):
+    pass
+
+class Dog(Mammal):
+    pass
+```
+
+---
+
+### Hierarchical Inheritance
+
+Multiple child classes inherit from the same parent class.
+
+```python
+class Vehicle:
+    pass
+
+class Car(Vehicle):
+    pass
+
+class Bike(Vehicle):
+    pass
+```
+
+---
+
+### Multiple Inheritance
+
+One child class inherits from multiple parent classes.
+
+```python
+class Camera:
+    pass
+
+class Phone:
+    pass
+
+class SmartPhone(Camera, Phone):
+    pass
+```
+
+---
+
+### Hybrid Inheritance
+
+Hybrid inheritance combines two or more inheritance types to model more complex relationships.
+
+---
+
+# 🔹 Method Overriding
+
+Method overriding allows a child class to provide its own implementation of a method already defined in the parent class.
+
+### Example
+
+```python
+class Animal:
+
+    def sound(self):
+        print("Animal makes a sound")
+
+
+class Dog(Animal):
+
+    def sound(self):
+        print("Dog barks")
+```
+
+---
+
+# 🔹 Using `super()`
+
+The `super()` function is used to call methods or constructors from the parent class.
+
+### Constructor Example
+
+```python
+class Student(Person):
+
+    def __init__(self, name, age, roll_number):
+        super().__init__(name, age)
+        self.roll_number = roll_number
+```
+
+---
+
+### Method Example
+
+```python
+class Car(Vehicle):
+
+    def display(self):
+        super().display()
+        print("Fuel Type:", self.fuel_type)
+```
+
+Using `super()` helps avoid duplicate code and keeps programs easier to maintain.
+
+---
+
+# 🔹 Method Resolution Order (MRO)
+
+When multiple inheritance is used, Python follows a specific order to decide which method should be executed.
+
+### Example
+
+```python
+class A:
+    pass
+
+class B(A):
+    pass
+
+class C(A):
+    pass
+
+class D(B, C):
+    pass
+
+print(D.mro())
+```
+
+MRO ensures that Python always knows which method to execute first when multiple parent classes contain methods with the same name.
+
+---
+
+# 💻 Practice Programs Completed
+
+* ✅ Single Inheritance Examples
+* ✅ Multilevel Inheritance Examples
+* ✅ Hierarchical Inheritance Examples
+* ✅ Multiple Inheritance Examples
+* ✅ Method Overriding Practice
+* ✅ `super()` with Constructors
+* ✅ `super()` with Methods
+* ✅ MRO Demonstration
+* ✅ Banking System
+* ✅ Vehicle Management System
+* ✅ University Management System
+
+---
+
+# 🏢 Company-Style Coding Practice
+
+Solved interview-oriented coding questions based on:
+
+* Types of Inheritance
+* Method Overriding
+* Using `super()`
+* Method Resolution Order (MRO)
+* Code Reusability
+* OOP Design
+
+---
+
+# 🌍 Real-World Applications
+
+These concepts are commonly used in:
+
+* 🚗 Vehicle Management Systems
+* 🏦 Banking Applications
+* 🎓 University Management Systems
+* 🏥 Hospital Management Systems
+* 📱 Smart Device Applications
+* 🛒 E-commerce Platforms
+
+---
+
+# 🧠 Key Takeaways
+
+* Choose the inheritance type based on the relationship between classes.
+* Use method overriding to customize inherited behavior.
+* Use `super()` to reuse parent functionality instead of duplicating code.
+* Understand MRO when working with multiple inheritance.
+* Draw the class hierarchy before writing code to avoid design mistakes.
+
+---
+
+# 📈 Skills Gained
+
+After completing Day 16, I can:
+
+* Design appropriate inheritance hierarchies.
+* Differentiate between inheritance types.
+* Override methods confidently.
+* Use `super()` in constructors and methods.
+* Explain Method Resolution Order (MRO).
+* Solve company-style OOP coding problems.
+
+---
+
+# 🎯 Next Step
+
+In **Day 17**, I will learn:
+
+* Polymorphism
+* Duck Typing
+* Operator Overloading
+
+I will also solve company-style coding problems and complete an assessment focused on polymorphism.
+
+---
+
+## 📌 Day 16 Status
 
 **Completed Successfully ✅**
 
