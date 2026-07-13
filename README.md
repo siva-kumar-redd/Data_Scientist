@@ -4764,19 +4764,7 @@ After completing Day 16, I can:
 * Explain Method Resolution Order (MRO).
 * Solve company-style OOP coding problems.
 
----
 
-# 🎯 Next Step
-
-In **Day 17**, I will learn:
-
-* Polymorphism
-* Duck Typing
-* Operator Overloading
-
-I will also solve company-style coding problems and complete an assessment focused on polymorphism.
-
----
 
 ## 📌 Day 16 Status
 
