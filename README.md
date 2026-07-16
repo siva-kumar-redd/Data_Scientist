@@ -5391,6 +5391,398 @@ I will continue extending the Smart Vehicle Management System while following en
 
 **Completed Successfully ✅**
 
+# 🚀 Day 19 – Encapsulation, Access Modifiers, Getters, Setters & `@property`
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-Advanced_OOP-blue?style=for-the-badge\&logo=python)
+![Day](https://img.shields.io/badge/Day-19-success?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-Encapsulation-orange?style=for-the-badge)
+
+### 🔥 Protecting Data and Building Secure Object-Oriented Applications
+
+</div>
+
+---
+
+# 🎯 Goal of Day 19
+
+Today I learned the fourth pillar of Object-Oriented Programming (OOP): **Encapsulation**.
+
+The objective was to understand how to protect an object's internal data by controlling access through methods instead of allowing direct modification.
+
+By the end of today, I can:
+
+* ✅ Explain Encapsulation
+* ✅ Differentiate Public, Protected and Private members
+* ✅ Understand Name Mangling
+* ✅ Create Getter and Setter methods
+* ✅ Use the `@property` decorator
+* ✅ Design secure and maintainable classes
+* ✅ Apply encapsulation in real-world applications
+
+---
+
+# 📚 Topics Covered
+
+## 🔹 What is Encapsulation?
+
+Encapsulation is the process of **binding data (variables) and methods (functions) together inside a class while controlling access to the data**.
+
+### Simple Definition
+
+> Protect an object's data by exposing only controlled methods for accessing and modifying it.
+
+---
+
+## 🔹 Why Do We Need Encapsulation?
+
+Without encapsulation:
+
+* Anyone can modify important data.
+* Invalid values can enter the system.
+* Security risks increase.
+* Applications become difficult to maintain.
+
+With encapsulation:
+
+* Data remains protected.
+* Validation becomes possible.
+* Code becomes easier to maintain.
+* Business rules are enforced consistently.
+
+---
+
+# 🌍 Real-World Examples
+
+## 🏦 Bank Account
+
+Users cannot directly change:
+
+* Account Balance
+* ATM PIN
+
+Instead, they use:
+
+* Deposit
+* Withdraw
+* Check Balance
+
+The application validates every operation.
+
+---
+
+## 📱 Instagram
+
+Users cannot directly modify:
+
+* Followers Count
+* Following Count
+
+Instead, Instagram provides:
+
+* Follow
+* Unfollow
+
+The application updates the data internally.
+
+---
+
+## 🏥 Hospital Management
+
+Sensitive patient information is protected.
+
+Doctors and staff interact with the system using approved operations such as:
+
+* Update Diagnosis
+* Add Prescription
+* View Medical History
+
+---
+
+# 🔹 Public Members
+
+Public members are accessible from anywhere.
+
+Example:
+
+```python
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+```
+
+Public members require no special notation.
+
+---
+
+# 🔹 Protected Members
+
+Protected members begin with a single underscore (`_`).
+
+Example:
+
+```python
+class Employee:
+
+    def __init__(self, salary):
+        self._salary = salary
+```
+
+Protected members are intended for use within the class and its subclasses.
+
+Although Python allows external access, the underscore signals that they are for internal use.
+
+---
+
+# 🔹 Private Members
+
+Private members begin with a double underscore (`__`).
+
+Example:
+
+```python
+class BankAccount:
+
+    def __init__(self, balance):
+        self.__balance = balance
+```
+
+Private members are protected using **Name Mangling**, discouraging direct external access.
+
+---
+
+# 🔹 Name Mangling
+
+Python internally changes:
+
+```text
+__balance
+```
+
+into something similar to:
+
+```text
+_BankAccount__balance
+```
+
+This makes accidental direct access much more difficult.
+
+---
+
+# 🔹 Getter Methods
+
+Getter methods safely return private data.
+
+Example:
+
+```python
+def get_balance(self):
+    return self.__balance
+```
+
+Benefits:
+
+* Controlled access
+* Read-only behavior when needed
+* Better maintainability
+
+---
+
+# 🔹 Setter Methods
+
+Setter methods safely update private data after validation.
+
+Example:
+
+```python
+def set_salary(self, salary):
+
+    if salary > 0:
+        self.__salary = salary
+```
+
+Benefits:
+
+* Validation
+* Data integrity
+* Business rule enforcement
+
+---
+
+# 🔹 `@property` Decorator
+
+The `@property` decorator allows methods to behave like attributes.
+
+Example:
+
+```python
+@property
+def salary(self):
+    return self.__salary
+```
+
+Usage:
+
+```python
+print(employee.salary)
+```
+
+instead of
+
+```python
+print(employee.get_salary())
+```
+
+This results in cleaner and more Pythonic code.
+
+---
+
+# 💻 Coding Practice Completed
+
+Implemented programs for:
+
+* ✅ Public Members
+* ✅ Protected Members
+* ✅ Private Members
+* ✅ Name Mangling
+* ✅ Getter Methods
+* ✅ Setter Methods
+* ✅ `@property`
+* ✅ Student Management
+* ✅ Employee Management
+* ✅ Product Management
+* ✅ Laptop Price Validation
+
+---
+
+# 🏢 Company-Style Coding Practice
+
+Solved interview-oriented coding problems based on:
+
+* Employee Payroll System
+* Banking System
+* Vehicle Management
+* AI Model Management
+* Encapsulation with Validation
+
+Focused on:
+
+* Data Protection
+* Validation
+* Reusability
+* Clean OOP Design
+
+---
+
+# 🚀 Enterprise Project
+
+## Smart Vehicle Management System (Version 2)
+
+### Features Added
+
+* Private vehicle information
+* Getter methods
+* Setter methods
+* Price validation
+* Secure data handling
+* Improved object-oriented design
+
+### OOP Concepts Used
+
+* Encapsulation
+* Inheritance
+* Abstraction
+* Polymorphism
+
+---
+
+# 🌍 Real-World Applications
+
+Encapsulation is widely used in:
+
+* 🏦 Banking Applications
+* 🏥 Hospital Management Systems
+* 🛒 E-commerce Platforms
+* 🚗 Vehicle Management Systems
+* 🎓 Student Information Systems
+* ☁️ Enterprise Software
+
+---
+
+# 🤖 Data Science & Generative AI Connection
+
+Encapsulation is important in Data Science and AI because many libraries hide complex internal logic while exposing clean APIs.
+
+Examples include:
+
+* Machine Learning model classes
+* Data preprocessing pipelines
+* Feature engineering utilities
+* AI model wrappers
+* Production inference services
+
+Encapsulation helps developers interact with these systems without needing to understand every implementation detail.
+
+---
+
+# 🧠 Key Takeaways
+
+* Encapsulation protects object data.
+* Public members are accessible everywhere.
+* Protected members are intended for internal and subclass use.
+* Private members use Name Mangling.
+* Getters safely read private data.
+* Setters validate data before updating it.
+* `@property` creates cleaner, more Pythonic APIs.
+* Encapsulation improves security, maintainability, and code quality.
+
+---
+
+# 📈 Skills Gained
+
+After completing Day 19, I can:
+
+* Design encapsulated classes.
+* Protect sensitive object data.
+* Implement validation using setters.
+* Access private data using getters.
+* Use `@property` effectively.
+* Build secure and maintainable Python applications.
+* Apply enterprise-level OOP principles.
+
+---
+
+# 🎯 OOP Milestone Achieved
+
+After completing Day 19, I have successfully learned the **Four Pillars of Object-Oriented Programming**:
+
+* ✅ Inheritance
+* ✅ Polymorphism
+* ✅ Abstraction
+* ✅ Encapsulation
+
+---
+
+# 🎯 Next Step
+
+In **Day 20**, I will learn:
+
+* Composition
+* Aggregation
+* Association
+* HAS-A Relationship
+* IS-A vs HAS-A
+* Enterprise OOP Design
+
+I will continue extending the **Smart Vehicle Management System** and solve company-style coding challenges based on real software design scenarios.
+
+---
+
+# 📌 Day 19 Status
+
+**Completed Successfully ✅**
 
 
 
