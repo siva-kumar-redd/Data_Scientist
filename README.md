@@ -6073,6 +6073,299 @@ These concepts are fundamental for handling datasets in Python before moving int
 # 📌 Day 20 Status
 
 **Completed Successfully ✅**
+# 🚀 Day 21 – File Handling in Python
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-Advanced-blue?style=for-the-badge\&logo=python)
+![Day](https://img.shields.io/badge/Day-21-success?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-File_Handling-orange?style=for-the-badge)
+
+### 📂 Reading, Writing & Managing Files in Python
+
+</div>
+
+---
+
+# 🎯 Goal of Day 21
+
+Today I learned how Python interacts with files stored on a computer.
+
+I explored how to:
+
+* Read data from files
+* Write data to files
+* Append new content
+* Work with file pointers
+* Handle file-related exceptions
+* Use the industry-standard `with open()` approach
+
+File handling is a fundamental skill because almost every Data Science and Machine Learning project starts by loading data from files such as CSV, JSON, Excel, or text files.
+
+---
+
+# 📚 Topics Covered
+
+## 🔹 What is File Handling?
+
+File handling is the process of creating, reading, writing, updating, and managing files using Python.
+
+Unlike variables, files store data permanently even after the program finishes execution.
+
+---
+
+## 🔹 Opening Files
+
+Used the `open()` function to access files.
+
+Syntax:
+
+```python
+open("filename", "mode")
+```
+
+---
+
+## 🔹 File Modes
+
+| Mode | Purpose                       |
+| ---- | ----------------------------- |
+| `r`  | Read existing file            |
+| `w`  | Write (creates or overwrites) |
+| `a`  | Append data                   |
+| `x`  | Create a new file             |
+| `rb` | Read binary files             |
+| `wb` | Write binary files            |
+
+---
+
+## 🔹 Reading Files
+
+Learned to use:
+
+```python
+file.read()
+```
+
+Reads the entire file.
+
+---
+
+## 🔹 Writing Files
+
+Learned:
+
+```python
+file.write()
+```
+
+Creates or overwrites file contents.
+
+---
+
+## 🔹 Appending Files
+
+Using append mode:
+
+```python
+"a"
+```
+
+Adds new data without deleting existing content.
+
+---
+
+## 🔹 Exception Handling with Files
+
+Handled situations like:
+
+* File not found
+* Invalid file paths
+
+using:
+
+```python
+try:
+    ...
+except FileNotFoundError:
+    ...
+```
+
+---
+
+## 🔹 `readline()`
+
+Reads one line at a time.
+
+Useful for processing large files efficiently.
+
+---
+
+## 🔹 `readlines()`
+
+Reads all lines and returns them as a list.
+
+Example:
+
+```python
+['Siva\n', 'Rahul\n', 'Priya']
+```
+
+---
+
+## 🔹 File Pointer
+
+Every opened file has a pointer that tracks the current reading position.
+
+---
+
+## 🔹 `tell()`
+
+Returns the current position of the file pointer.
+
+---
+
+## 🔹 `seek()`
+
+Moves the file pointer to a specified location.
+
+Useful when reading a file multiple times.
+
+---
+
+## 🔹 `with open()`
+
+Industry-standard way of handling files.
+
+Advantages:
+
+* Automatically closes files
+* Cleaner code
+* Safer during exceptions
+* Easier to maintain
+
+---
+
+## 🔹 Reading CSV Files
+
+Learned that CSV files are plain text files containing comma-separated values.
+
+Example:
+
+```python
+with open("students.csv", "r") as file:
+    print(file.read())
+```
+
+This provides the foundation for later using:
+
+```python
+import pandas as pd
+
+df = pd.read_csv("students.csv")
+```
+
+---
+
+# 🌍 Real-World Applications
+
+File handling is used in:
+
+* 📊 Data Science
+* 🤖 Machine Learning
+* 🏦 Banking Systems
+* 🏥 Hospital Management
+* 🛒 E-commerce Platforms
+* 📈 Business Reporting
+* 📂 Log File Processing
+
+---
+
+# 💻 Coding Practice Completed
+
+Implemented programs for:
+
+* ✅ Creating text files
+* ✅ Writing data
+* ✅ Appending data
+* ✅ Reading complete files
+* ✅ Reading one line
+* ✅ Reading all lines
+* ✅ Using `tell()`
+* ✅ Using `seek()`
+* ✅ Handling `FileNotFoundError`
+
+---
+
+# 🤖 Data Science Connection
+
+File handling is one of the first skills required in Data Science because datasets are commonly stored in:
+
+* CSV files
+* Excel files
+* JSON files
+* Text files
+
+Understanding basic file operations makes it easier to work with libraries such as pandas later in the learning journey.
+
+---
+
+# 🧠 Key Takeaways
+
+* Files store data permanently.
+* Choose the correct file mode (`r`, `w`, `a`, `x`) based on the task.
+* `read()` reads the entire file.
+* `readline()` reads one line.
+* `readlines()` returns all lines as a list.
+* `tell()` shows the current file pointer position.
+* `seek()` moves the file pointer.
+* `with open()` is the recommended way to work with files.
+* Handle file-related exceptions gracefully.
+
+---
+
+# 📈 Skills Gained
+
+After completing Day 21, I can:
+
+* Create and manage files in Python.
+* Read and write text files.
+* Append data safely.
+* Use file pointers effectively.
+* Handle common file-related exceptions.
+* Read basic CSV files.
+* Write cleaner and safer file-handling code using `with open()`.
+
+---
+
+# 📊 Day 21 Performance
+
+* 💻 Coding Practice: **Completed ✅**
+* 🧠 MCQs: **9/10**
+* 📝 Theory Questions: **Completed ✅**
+* 🏆 Overall Performance: **Excellent**
+
+---
+
+# 🎯 Next Step
+
+In **Day 22**, I will learn:
+
+* Python Modules
+* Import Statements
+* Built-in Modules
+* Creating Custom Modules
+* Packages
+* `__name__ == "__main__"`
+* Code Organization Best Practices
+
+These concepts are essential for building scalable Python applications and preparing for Data Science, Machine Learning, and AI projects.
+
+---
+
+# 📌 Day 21 Status
+
+**Completed Successfully ✅**
 
 
 # 👨‍💻 Author
