@@ -5784,6 +5784,295 @@ I will continue extending the **Smart Vehicle Management System** and solve comp
 
 **Completed Successfully ✅**
 
+# 🚀 Day 20 – Exception Handling in Python
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-Advanced-blue?style=for-the-badge\&logo=python)
+![Day](https://img.shields.io/badge/Day-20-success?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-Exception_Handling-orange?style=for-the-badge)
+
+### 🛡️ Writing Robust Python Programs with Exception Handling
+
+</div>
+
+---
+
+# 🎯 Goal of Day 20
+
+Today I learned how to handle runtime errors in Python using **Exception Handling**.
+
+The objective was to prevent programs from crashing unexpectedly and make them more reliable by handling errors gracefully.
+
+By the end of today, I can:
+
+* ✅ Understand runtime exceptions
+* ✅ Use `try` and `except`
+* ✅ Handle specific exceptions
+* ✅ Use `else`
+* ✅ Use `finally`
+* ✅ Raise exceptions using `raise`
+* ✅ Create custom exceptions
+* ✅ Write cleaner and more reliable Python programs
+
+---
+
+# 📚 Topics Covered
+
+## 🔹 What is an Exception?
+
+An **exception** is an error that occurs while a program is running.
+
+If an exception is not handled, Python stops executing the program.
+
+---
+
+## 🔹 Why Do We Need Exception Handling?
+
+Without exception handling:
+
+* Program crashes unexpectedly.
+* Users receive confusing error messages.
+* Data processing may stop.
+
+With exception handling:
+
+* Programs continue running whenever possible.
+* Users receive meaningful error messages.
+* Applications become more reliable.
+
+---
+
+# 🌍 Real-World Examples
+
+## 📂 File Handling
+
+If a required file does not exist, the program should display a meaningful message instead of crashing.
+
+Example:
+
+```text
+File not found. Please check the file path.
+```
+
+---
+
+## 👤 User Input Validation
+
+If a user enters text instead of a number, the application should ask for valid input instead of terminating.
+
+---
+
+## 📊 Data Science Example
+
+When loading datasets:
+
+```python
+import pandas as pd
+
+try:
+    df = pd.read_csv("sales.csv")
+except FileNotFoundError:
+    print("Dataset not found.")
+```
+
+This pattern is commonly used in data analysis and machine learning projects.
+
+---
+
+# 🔹 try and except
+
+The `try` block contains code that may produce an exception.
+
+The `except` block handles the exception if it occurs.
+
+Example:
+
+```python
+try:
+    num = int(input())
+    print(100 / num)
+except ZeroDivisionError:
+    print("Cannot divide by zero.")
+```
+
+---
+
+# 🔹 Handling Specific Exceptions
+
+I learned to handle common Python exceptions such as:
+
+* ✅ `ValueError`
+* ✅ `ZeroDivisionError`
+* ✅ `FileNotFoundError`
+
+Using specific exceptions makes code easier to understand and debug.
+
+---
+
+# 🔹 else
+
+The `else` block executes **only when no exception occurs**.
+
+Example:
+
+```python
+try:
+    number = int(input())
+except ValueError:
+    print("Invalid input")
+else:
+    print("Valid input")
+```
+
+---
+
+# 🔹 finally
+
+The `finally` block executes **every time**, regardless of whether an exception occurs.
+
+Example:
+
+```python
+try:
+    file = open("data.txt")
+except FileNotFoundError:
+    print("File not found")
+finally:
+    print("Program finished")
+```
+
+It is commonly used for cleanup operations such as closing files or database connections.
+
+---
+
+# 🔹 raise
+
+The `raise` keyword is used to generate exceptions manually.
+
+Example:
+
+```python
+age = int(input())
+
+if age < 18:
+    raise ValueError("Age must be at least 18.")
+```
+
+This helps enforce business rules and validate user input.
+
+---
+
+# 🔹 Custom Exceptions
+
+Python allows developers to create their own exception classes.
+
+Example:
+
+```python
+class InvalidMarksError(Exception):
+    pass
+```
+
+Custom exceptions make applications more organized and easier to maintain.
+
+---
+
+# 💻 Coding Practice Completed
+
+Implemented programs for:
+
+* ✅ Safe Division Calculator
+* ✅ Age Validation
+* ✅ File Reader with Exception Handling
+* ✅ `try` – `except` – `else`
+* ✅ `try` – `finally`
+* ✅ Using `raise`
+* ✅ Creating Custom Exceptions
+* ✅ Marks Validation System
+
+---
+
+# 🌍 Practical Applications
+
+Exception handling is used in:
+
+* 📂 File Processing
+* 🌐 API Requests
+* 🗄️ Database Operations
+* 📊 Data Analysis Projects
+* 🤖 Machine Learning Pipelines
+* ☁️ Enterprise Applications
+
+---
+
+# 🤖 Data Science Connection
+
+Exception handling is an essential skill for Data Scientists because real-world data is often incomplete or inconsistent.
+
+Typical use cases include:
+
+* Reading CSV and Excel files
+* Handling missing datasets
+* Validating user input
+* Managing API failures
+* Preventing pipeline failures during data processing
+
+---
+
+# 🧠 Key Takeaways
+
+* Exceptions are runtime errors.
+* `try` contains risky code.
+* `except` handles exceptions.
+* `else` runs only if no exception occurs.
+* `finally` always executes.
+* `raise` creates exceptions manually.
+* Custom exceptions improve code organization.
+* Catch specific exceptions whenever possible instead of using a generic `except`.
+
+---
+
+# 📈 Skills Gained
+
+After completing Day 20, I can:
+
+* Handle runtime errors confidently.
+* Prevent programs from crashing unexpectedly.
+* Validate user input effectively.
+* Use `else` and `finally` appropriately.
+* Raise built-in exceptions.
+* Create custom exceptions.
+* Write more reliable and maintainable Python applications.
+
+---
+
+# 📊 Day 20 Performance
+
+* 💻 Coding Practice: **40/40**
+* 🧠 MCQs: **4/5**
+* 🏆 Overall Score: **44/45 (97.8%)**
+
+---
+
+# 🎯 Next Step
+
+In **Day 21**, I will learn:
+
+* File Handling
+* Reading Files
+* Writing Files
+* Appending Data
+* File Modes (`r`, `w`, `a`, `x`)
+* Working with `with open()`
+
+These concepts are fundamental for handling datasets in Python before moving into NumPy, pandas, and other Data Science libraries.
+
+---
+
+# 📌 Day 20 Status
+
+**Completed Successfully ✅**
 
 
 # 👨‍💻 Author
