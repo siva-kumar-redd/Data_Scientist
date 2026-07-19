@@ -1,0 +1,6 @@
+exp = (x*x for x in range(5))
+print(next(exp))
+print(next(exp))
+print(next(exp))
+print(next(exp))
+print(next(exp))
