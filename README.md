@@ -6953,6 +6953,281 @@ Decorators are widely used in frameworks such as Flask, Django, and FastAPI, mak
 
 **Completed Successfully ✅**
 
+# 🚀 Day 24 – Python Decorators
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-Advanced-blue?style=for-the-badge\&logo=python)
+![Day](https://img.shields.io/badge/Day-24-success?style=for-the-badge)
+![Topic](https://img.shields.io/badge/Topic-Decorators-orange?style=for-the-badge)
+
+### ⚡ Adding Functionality Without Modifying Existing Code
+
+</div>
+
+---
+
+# 🎯 Goal of Day 24
+
+Today I learned one of Python's most powerful features: **Decorators**. Decorators allow us to add extra functionality to a function without changing its original implementation.
+
+---
+
+# 📚 Topics Covered
+
+## 🔹 What is a Decorator?
+
+A decorator is a function that takes another function as input and returns a new function with additional behavior.
+
+It helps us avoid repeating the same code across multiple functions.
+
+---
+
+## 🔹 Why Use Decorators?
+
+Instead of writing the same logic repeatedly inside many functions, decorators let us write that logic once and reuse it.
+
+Common use cases include:
+
+* Logging
+* Authentication
+* Authorization
+* Timing function execution
+* Validation
+* Caching
+
+---
+
+## 🔹 Basic Decorator
+
+Example:
+
+```python
+def decorator(func):
+
+    def wrapper():
+        print("Before")
+
+        func()
+
+        print("After")
+
+    return wrapper
+
+
+@decorator
+def greet():
+    print("Hello")
+
+greet()
+```
+
+Output:
+
+```text
+Before
+Hello
+After
+```
+
+---
+
+## 🔹 Understanding the Wrapper Function
+
+The **wrapper()** function contains the extra functionality that runs before and/or after the original function.
+
+Flow:
+
+```text
+Call Function
+      │
+      ▼
+Wrapper
+      │
+      ├── Before
+      ├── Original Function
+      └── After
+```
+
+---
+
+## 🔹 `@decorator` Syntax
+
+These two are equivalent:
+
+```python
+@decorator
+def greet():
+    print("Hello")
+```
+
+and
+
+```python
+def greet():
+    print("Hello")
+
+greet = decorator(greet)
+```
+
+The `@` symbol is simply cleaner syntax.
+
+---
+
+## 🔹 Decorators with `*args`
+
+When the original function accepts positional arguments, the wrapper should also accept them.
+
+Example:
+
+```python
+def decorator(func):
+
+    def wrapper(*args):
+
+        print("Before")
+
+        func(*args)
+
+        print("After")
+
+    return wrapper
+```
+
+`*args` stores positional arguments as a **tuple**.
+
+---
+
+## 🔹 Decorators with `**kwargs`
+
+For keyword arguments:
+
+```python
+def decorator(func):
+
+    def wrapper(**kwargs):
+
+        print("Before")
+
+        func(**kwargs)
+
+        print("After")
+
+    return wrapper
+```
+
+`**kwargs` stores keyword arguments as a **dictionary**.
+
+---
+
+## 🔹 Universal Decorator
+
+Most real-world decorators use both:
+
+```python
+def wrapper(*args, **kwargs):
+    return func(*args, **kwargs)
+```
+
+This allows the decorator to work with almost any function.
+
+---
+
+## 🔹 `functools.wraps`
+
+`functools.wraps` preserves the original function's metadata, such as:
+
+* Function name
+* Docstring
+* Module information
+
+Example:
+
+```python
+from functools import wraps
+
+def decorator(func):
+
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        return func(*args, **kwargs)
+
+    return wrapper
+```
+
+---
+
+# 🌍 Real-World Applications
+
+Decorators are widely used in:
+
+* Flask
+* FastAPI
+* Django
+* Machine Learning pipelines
+* Performance monitoring
+* Logging systems
+* Security and authentication
+* API development
+
+---
+
+# 💻 Coding Practice
+
+Practiced:
+
+* ✅ Creating a basic decorator
+* ✅ Understanding wrapper functions
+* ✅ Using `@decorator`
+* ✅ Passing positional arguments with `*args`
+* ✅ Passing keyword arguments with `**kwargs`
+* ✅ Preserving function metadata using `functools.wraps`
+
+---
+
+# 🧠 Key Takeaways
+
+* A decorator adds functionality without modifying the original function.
+* The wrapper function controls the execution flow.
+* `@decorator` is shorthand for `function = decorator(function)`.
+* `*args` accepts any number of positional arguments.
+* `**kwargs` accepts any number of keyword arguments.
+* `functools.wraps` preserves the original function's information.
+
+---
+
+# 📈 Skills Gained
+
+After completing Day 24, I can:
+
+* Create custom decorators.
+* Explain how wrapper functions work.
+* Decorate functions with and without arguments.
+* Use `*args` and `**kwargs` in decorators.
+* Understand the purpose of `functools.wraps`.
+* Read and understand decorator-based Python code.
+
+---
+
+# 🎯 Next Step
+
+**Day 25 – Context Managers**
+
+Topics include:
+
+* Context Managers
+* `with` Statement
+* `__enter__()` and `__exit__()`
+* Creating Custom Context Managers
+* File Handling Best Practices
+* Practical Applications
+
+---
+
+# 📌 Day 24 Status
+
+**Completed Successfully ✅**
+
 # 👨‍💻 Author
 
 **Siva Kumar Reddy**
