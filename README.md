@@ -107,17 +107,6 @@ These concepts are the foundation of:
 
 Every Data Scientist starts by mastering Python fundamentals.
 
----
-
-
-
-# 💡 Day 1 Reflection
-
-Today I learned the fundamental building blocks of Python and completed my first coding exercises. This is the first step toward becoming an Data Scientist.
-
-> "Small daily improvements lead to remarkable long-term results."
-
----
 # 🚀 Day 2 — Decision Making in Python
 
 <div align="center">
@@ -248,62 +237,6 @@ is_raining = False
 if not is_raining:
     print("Go Outside")
 ```
-
----
-
-
-# 💻 Mini Project
-
-## Student Result System
-
-Features:
-
-- Accept marks input
-- Calculate grade
-- Display result
-
-Example:
-
-```text
-Enter Marks: 85
-
-Result: Pass
-Grade: B
-```
-
----
-
-
-
-
-
----
-
-# 🚀 Why This Matters
-
-Decision making is used everywhere in AI and software systems:
-
-- 🤖 Machine Learning Models
-- 📊 Data Processing
-- 🎮 Games
-- 🌐 Web Applications
-- 📱 Mobile Apps
-
-Every intelligent system makes decisions based on conditions.
-
----
-
-# 📈 Learning Progress
-
-
-
----
-
-# 💡 Day 2 Reflection
-
-Today I learned how to make programs think and choose actions using conditions. Decision-making is one of the most important skills in programming and forms the basis of intelligent systems.
-
-> "Good programmers don't just write code—they teach computers how to make decisions."
 
 ---
 
